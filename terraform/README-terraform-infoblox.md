@@ -50,6 +50,9 @@ Version 2.7 not supported
 
 ````
 
+To find the issue, I had to check Infoblox plugin code [here](https://github.com/terraform-providers/terraform-provider-infoblox/blob/328f438127673823fc574c7c9dfe75c82978b8bd/infoblox/provider.go).
+
+
 Similarly running A record creation with 2.7 lead same error:
 https://github.com/scoulomb/myDNS/blob/master/3-DNS-solution-providers/1-Infoblox/1-Infoblox-API-overview.md#post-a
 ```shell script
