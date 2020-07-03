@@ -30,11 +30,19 @@ but
 ````shell script
 provider "infoblox" {
 username="admin"
-server="mydns.loc" # DNS server DNS name
-password="xxxx"
+server="x.y.z.t" # DNS server DNS name or IP address (both tested ok), be careful to space
+password="infoblox"
 wapi_version=2.5 # change version to 2.5 and do not use default to 2.7 (as my Infoblox instance is a 2.5)
 }
 ````
+
+To find the issue, I had to check Infoblox plugin code [here](https://github.com/terraform-providers/terraform-provider-infoblox/blob/328f438127673823fc574c7c9dfe75c82978b8bd/infoblox/provider.go).
+Otherwise it will prompt for username, server and password.
+
+I fixed it here: https://github.com/terraform-providers/terraform-provider-infoblox/pull/12
+
+I also added `wapi_version`
+
 Otherwise we have the following error:
 
 ```shell script

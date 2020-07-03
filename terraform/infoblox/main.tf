@@ -2,8 +2,8 @@
 # use: https://github.com/terraform-providers/terraform-provider-infoblox/blob/328f438127673823fc574c7c9dfe75c82978b8bd/infoblox/provider.go
 provider "infoblox" {
 username="admin"
-server="mydnsserver.loc" # DNS server DNS name
-password="myinfobloxpwd"
+server="x.y.z.t" # DNS server DNS name or IP address (both tested ok), be careful to space
+password="infoblox"
 wapi_version=2.5 # change version to 2.5 and do not use default to 2.7 (as my Infoblox instance is a 2.5)
 }
 
