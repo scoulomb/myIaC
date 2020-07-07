@@ -279,4 +279,4 @@ But does not have a Terraform provisionner because in Hashicorp vision: https://
 > The primary usage of Terraform is for managing remote resources in cloud providers such as AWS. Terraform is designed to be able to manage extremely large infrastructures that span multiple cloud providers. Vagrant is designed primarily for local development environments that use only a handful of virtual machines at most.
 
 
-[Next: Terraform and DNS configuration](README-terraform-infoblox.md)
+[Next: Terraform and DNS configuration](README-terraform-infoblox-part1-basic.md)

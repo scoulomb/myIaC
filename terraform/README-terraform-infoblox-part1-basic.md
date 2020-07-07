@@ -335,3 +335,5 @@ Address:        <ipv4.addr.of.dns-srv>#53
 ```
 
 Note if changing value terraform will do the diff but plugin does not support it and it leads to an error.
+
+[Next: part 2 - Terraform resource detailed](README-terraform-infoblox-part2-resource.md)
