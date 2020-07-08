@@ -1,0 +1,3 @@
+name: testk8sgoroot
+runtime: go
+description: A minimal Kubernetes Go Pulumi program
