@@ -572,3 +572,13 @@ func Resource(d *schema.ResourceData, m interface{}) error {
 It seems allocation accept empty IP from the code (stop here), but I would expect it to be provided.
 
 This makes us understand the disclaimer: https://github.com/terraform-providers/terraform-provider-infoblox/tree/v1.0.0#disclaimer
+
+Google could and Azure have also their Terraform plugin:
+- https://www.terraform.io/docs/providers/azurerm/r/dns_a_record.html
+- https://www.terraform.io/docs/providers/google/r/dns_managed_zone.html
+=> Where they call API.
+
+For instance GCP
+- call to [client DNS](https://github.com/terraform-providers/terraform-provider-google/blob/ed3bc148df743315ae16b57137a910548ee0fd56/google/resource_dns_record_set.go#L165)
+- Where [client](https://pkg.go.dev/google.golang.org/api?tab=overview), calls the [API](https://github.com/googleapis/google-api-go-client/tree/master/dns/v1), where in README 
+> These are auto-generated Go libraries from the Google Discovery Service's JSON description files of the available "new style" Google APIs.
