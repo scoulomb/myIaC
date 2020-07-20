@@ -53,6 +53,7 @@ pulumi destroy`shell script
 - `pulumi config set isMinikube false` not taken into account so hardcode it
 - Not possible to get cluster IP (probably not updated yet when retrieved ), use port provided instead.
 
+Last 2 bullets -> open issue: https://github.com/pulumi/docs/issues/3780 and folder: quickStartWithFix3780
 
 ## Notes
 Note we need an external token for access
